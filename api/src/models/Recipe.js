@@ -8,5 +8,26 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    idRecipe: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+    },
+    resume: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    score: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    lvlFood: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    steps: {
+      type: DataTypes.STRING,
+      allowNull: true
+    }
   });
 };
